@@ -1,0 +1,14 @@
+/js
+
+Javascript files.
+  - For each clear purpose there should be maintained an individual file.
+  - For performance reason the individual files should be glued together via Jekyll, BUT distinguished in two files:
+    - Scripts to run BEFORE parsing content
+      - those that do not change DOM
+      - loaded in HTML HEAD
+    - Scripts to run AFTER parsing content
+      - those that DO change DOM
+      - loaded at the end of HTML BODY
+  - Rich commenting should be done via Jekyll Tags
+    - ... makes only sense if scripts are glued by Jekyll, see above
+    
